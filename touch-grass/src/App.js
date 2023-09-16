@@ -1,12 +1,25 @@
 import React from 'react';
 import Filter from './components/Filter';
+import './App.css';
+
+// components
+import EventList from './components/EventCard';
+
+const EventsData = [
+  {},
+  {},
+  {}
+]
 
 function App() {
   return (
-    <div>
-      <h1>My React App</h1>
-      <Filter />
-    </div>
+      <div className="container">
+        {/* Title Section */}
+        <Filter />
+        <EventList></EventList>
+        {/* footer...? */}
+
+      </div>
   );
 }
 
