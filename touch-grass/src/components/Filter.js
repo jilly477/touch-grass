@@ -36,31 +36,16 @@ function Filter() {
 
   const OuterContainer = {
     display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-    flexDirection: 'column'
+    alignItems: 'flex-start',
+    justifyContent: 'flex-start'
   };
 
-  const ButtonContainer = {
-    margin: '20px',
-    display: 'flex',
-    justifyContent: 'space-between'
+  const buttonContainer = {
+    display: 'flex'
   };
 
   return (
     <div style={OuterContainer}>
-      <div style={ButtonContainer}>
-        <button className="Filter" onClick={filter} >
-          Music</button>
-        <button className="Filter" onClick={filter} >
-          Outdoors</button>
-        <button className="Filter" onClick={filter} >
-          Food</button>
-        <button className="Filter" onClick={filter} >
-          Sports</button>
-        <button className="Filter" onClick={filter} >
-          Show</button>
-      </div>
 
       <div className="react-dropdown">
         <div class="dropdown">
@@ -80,14 +65,12 @@ function Filter() {
             <option value="Women" class="dropdown__items">Women</option>
             <option value="BIPOC" class="dropdown__items">BIPOC</option>
           </select>
-          <ul>
+          <div style={buttonContainer}>
             {items.map((item, index) => (
-              <p>
                 <button className="Filter" onClick={() => removeItem(index)} >
                   {item}</button>
-              </p>
             ))}
-          </ul>
+          </div>
         </div>
       </div>
     </div>
