@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-const EventCard = ({title, imageUrl, desc, date, time}) => {
+const EventCard = ({title, imageUrl, location, date, time}) => {
     const [isTouched, setIsTouched] = useState(false);
 
     const onButtonClicked = {
@@ -43,7 +43,7 @@ const EventCard = ({title, imageUrl, desc, date, time}) => {
                 <div style={infoBox}>
                     <h2 style={textStyle} >{title}</h2>
                     <p style={textStyle}>{date} @ {time}</p>
-                    <p style={textStyle}>{desc}</p>
+                    <p style={textStyle}>{location}</p>
                 </div>
             </div>
         </div>

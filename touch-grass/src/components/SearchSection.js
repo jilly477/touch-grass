@@ -14,7 +14,7 @@ const SearchSection = () => {
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
-        height: '150px',
+        height: '200px',
         paddingTop: '100px'
     };
 
@@ -40,7 +40,7 @@ const SearchSection = () => {
 
     const SearchStyle = {
         display: 'flex',
-        height: '300px'
+        height: '100px'
     };
 
     return (
