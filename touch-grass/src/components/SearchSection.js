@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import SearchBar from "./SearchBar";
 
 const SearchSection = () => {
 
@@ -37,7 +38,7 @@ const SearchSection = () => {
         textAlign: 'center',
     };
 
-    const ScrollStyle = {
+    const SearchStyle = {
         display: 'flex',
         height: '300px'
     };
@@ -51,8 +52,8 @@ const SearchSection = () => {
                 <div style={MessageStyle}>
                     <p style={MessageText}>Fun events near you, for you. Go outside and touch some grass</p>
                 </div>
-                <div style={ScrollStyle}>
-                    <p></p>
+                <div style={SearchStyle}>
+                    <SearchBar></SearchBar>
                 </div>
             </div>
         </div>

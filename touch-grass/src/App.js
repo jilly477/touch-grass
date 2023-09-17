@@ -1,3 +1,5 @@
+import React from 'react';
+import Filter from './components/Filter';
 import './App.css';
 
 // components
@@ -40,14 +42,12 @@ const EventsData = [
 
 function App() {
   return (
-    <div>
       <div className="container">
         <Header></Header>
         <SearchSection></SearchSection>
+        <Filter />
         <EventList events={EventsData}></EventList>
-        {/* footer...? */}
       </div>
-    </div>
   );
 }
 
