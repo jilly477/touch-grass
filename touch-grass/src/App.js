@@ -1,5 +1,4 @@
 import React from 'react';
-import Filter from './components/Filter';
 import './App.css';
 
 // components
@@ -26,13 +25,11 @@ const EventsData = [
   { event: 'Toronto Blue Jays Game', cat: 'Sport', cat2: '', date: 'October 1', time: '3:07 pm - 7:07 pm', location: 'Rogers Centre', city: 'Toronto', price: 'not free', description: 'Toronto Blue Jays vs. Tampa Bay Runs!', img: '' },
   { event: 'Toronto Blue Jays', cat: 'Sport', cat2: '', date: 'September 24', time: '2:00 pm - 6:00 pm', location: 'Canadian Tire Centre', city: 'Ottawa', price: 'not free', description: 'Ottawa Senators vs. Toronto Maple Leafs', img: '' },
   { event: 'OutDoor Recreation Soccer', cat: 'Sport', cat2: 'Outdoor', date: 'September 17', time: '8:30 am - 10:00 am', location: 'McKee Public School', city: 'North York', price: 'free', description: 'Easy and fun soccer in teams of four, sponsored by Harbord Bakery.', img: '' },
-  { event: 'Sips & Songs: Outdoor Music & Vendor Market', cat: 'Music', cat2: 'Outdoor', date: 'September 24', time: '12:00 pm - 4:00 pm', location: 'Eight on Main', city: 'Markham', price: 'free', description: '', img: '' },
   { event: 'Mosport Outdoor GoKarting', cat: 'Outdoor', cat2: '', date: 'September 17', time: '12:00 pm - 2:00 pm', location: 'Canadian Tire Motorsport Park', city: 'Bowmanville', price: 'not free', description: 'Outdoor GoKarting Event. Vroom Vroom!', img: '' },
   { event: 'Hiking and Canoeing', cat: 'Outdoor', cat2: 'sport', date: 'September 17', time: '11:00 am - 2:00 pm', location: 'Kelso Conservation Area', city: 'Milton', price: 'free', description: 'Free hikes all over Kelso Park! Canoes and Kayaks must be bought at store.', img: '' },
   { event: 'Beach Blues Festival', cat: 'Outdoor', cat2: 'Music', date: 'September 15 - September 17', time: '', location: 'Stonebridge Town Centre', city: 'Wasaga Beach', price: 'free', description: 'A 3 day outdoor music Festival, with 2 main stages ensuring continuous music, a Vendor’s Village and a Liquid Lounge.', img: '' },
   { event: 'Outdoor Escape Game', cat: 'Outdoor', cat2: '', date: 'September 16', time: '5:00 pm - 6:30 pm', location: 'Distillery District', city: 'Toronto', price: 'free', description: 'Follow clues, solve puzzles, discover new places and learn incredible stories of Toronto past and present', img: '' },
   { event: 'Urban Hike and Yoga in Park', cat: 'Outdoor', cat2: '', date: 'September 17', time: '12:30 pm - 2:30 pm', location: 'The Boathouse Tea Room', city: 'Guelph', price: 'free', description: 'Join a bunch of cute nature queers for an urban hike and some yoga in the park', img: '' },
-  { event: 'Hike Historical Downtown Galt', cat: 'Outdoor', cat2: '', date: 'December 9', time: '10:00 am - 11:00 am', location: 'Idea Exchange | Queen Square', city: 'Cambridge', price: 'free', description: 'Hike though downtown Galt, following the Grand River as it winds through the historical part of downtown Galt', img: '' },
   { event: 'Forest Meditation Walk', cat: 'Outdoor', cat2: '', date: '', time: '', location: 'Huron Natural Area', city: 'Kitchener', price: 'free', description: 'Join us on a guided walk and meditation to honour the Autumn Equinox.', img: '' },
   { event: 'The Tyler Hubbard Show', cat: 'Show', cat2: '', date: 'October 19', time: '7:00 pm - 11:00 pm', location: 'Elements', city: 'Kitchener', price: 'free', description: 'Elements night club show!', img: '' },
   { event: 'All That Worldly Jazz Festival', cat: 'Music', cat2: '', date: 'September 16 - September 17', time: '', location: 'Staybridge Suites Waterloo', city: 'Waterloo', price: 'free', description: 'Enjoy a free festival of live world jazz with the flavours of Brazil, Turkey, Africa, Ireland and Latin', img: '' },
