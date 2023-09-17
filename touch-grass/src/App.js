@@ -1,5 +1,7 @@
 import React from 'react';
 import Filter from './components/Filter';
+import MyCalendar from './components/Calendar';
+import SearchBar from './components/SearchBar';
 import './App.css';
 
 // components
@@ -16,6 +18,9 @@ function App() {
       <div className="container">
         {/* Title Section */}
         <Filter />
+        <MyCalendar />
+        <SearchBar />
+        
         <EventList></EventList>
         {/* footer...? */}
 

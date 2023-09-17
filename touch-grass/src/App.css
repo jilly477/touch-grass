@@ -134,3 +134,37 @@
 svg {
   display: none;
 }
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  background-color: green;
+  border: 1px solid #149045;
+  border-radius: 20px;
+  padding: 5px;  
+  width: 800px;
+}
+
+input[type="text"] {
+  flex-grow: 1;
+  align-items: center;
+  border: none;
+  outline: none;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: #b0f5cb;
+  height: 50px;
+
+  font-size: 20px;
+}
+
+.image-button {
+  width: 30px;
+  height: 30px;
+  margin: 5px;
+  background-image: url('https://cdn.discordapp.com/attachments/841670721821212723/1152920967610368121/Magnifier.jpg'); /* Replace with your image URL */
+  background-size: cover; /* Adjust to fit your image */
+  background-repeat: no-repeat;
+  border: none; /* Remove the button border */
+  cursor: pointer; /* Show a pointer cursor on hover */
+}
